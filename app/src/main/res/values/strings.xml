@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HealthApp</string>
+    <string name="app_description">«Комплексная система мониторинга здоровья» автор Шиллер В.С.</string>
+    <string name="user_nameHint">Имя пользователя</string>
+    <string name="user_ageHint">Возраст</string>
+    <string name="button_saveText">Сохранить</string>
+    <string name="button_pressureText">Давление</string>
+    <string name="button_statisticsText">Показатели</string>
+    <string name="empty_message">Все поля должны быть заполнены</string>
+    <string name="pressureText">Давление</string>
+    <string name="upHint">Верхнее значение</string>
+    <string name="downHint">Нижнее значение</string>
+    <string name="pulseHint">Пульс</string>
+    <string name="tachoHint">Тахикардия</string>
+    <string name="dateHint">Дата замера</string>
+    <string name="error_message">Дата введена неверно</string>
+</resources>
