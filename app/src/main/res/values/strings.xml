@@ -14,4 +14,7 @@
     <string name="tachoHint">Тахикардия</string>
     <string name="dateHint">Дата замера</string>
     <string name="error_message">Дата введена неверно</string>
+    <string name="statisticsText">Жизненные показатели</string>
+    <string name="weightHint">Вес</string>
+    <string name="stepHint">Количество шагов</string>
 </resources>

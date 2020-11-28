@@ -6,6 +6,7 @@ import androidx.appcompat.widget.SwitchCompat;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -22,6 +23,7 @@ import java.util.Locale;
 public class Pressure extends AppCompatActivity {
 
    private ArrayList<PressureValue> pressureValues = new ArrayList<>();
+   private final static String TAG = "Pressure";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,13 +35,12 @@ public class Pressure extends AppCompatActivity {
         final EditText pulseValue = findViewById(R.id.valuePulse);
         final SwitchCompat tachoValue = findViewById(R.id.tachoValue);
         final  EditText dimensionDate = findViewById(R.id.dimensionDate);
-        final TextView tachoText = findViewById(R.id.textView3);
-        final TextView dateText = findViewById(R.id.textView4);
         Button buttonSave = findViewById(R.id.buttonSavePressure);
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View v) {
+                Log.d(TAG,"On click button save pressure");
                 String pressureUpStr = pressureUp.getText().toString();
                 String pressureDownStr = pressureDown.getText().toString();
                 String pulseStr = pulseValue.getText().toString();

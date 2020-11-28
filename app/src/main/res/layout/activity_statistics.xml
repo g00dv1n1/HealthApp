@@ -9,36 +9,44 @@
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Жизненные показатели"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="44dp" />
+        android:layout_height="19dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/statisticsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/userWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="Вес"
+        android:hint="@string/weightHint"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="104dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/userSteps"
+        android:layout_width="209dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="Количество шагов"
+        android:hint="@string/stepHint"
         android:inputType="number"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="184dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userWeight" />
 
     <Button
         android:id="@+id/buttonSaveStatistic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="@string/button_saveText"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="282dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSteps" />
 </androidx.constraintlayout.widget.ConstraintLayout>
